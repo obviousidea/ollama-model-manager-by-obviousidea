@@ -6,14 +6,19 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <Version>2026.04.17.3</Version>
-    <AssemblyVersion>2026.04.17.3</AssemblyVersion>
-    <FileVersion>2026.04.17.3</FileVersion>
-    <InformationalVersion>2026.04.17.3</InformationalVersion>
+    <Version>2026.04.17.5</Version>
+    <AssemblyVersion>2026.04.17.5</AssemblyVersion>
+    <FileVersion>2026.04.17.5</FileVersion>
+    <InformationalVersion>2026.04.17.5</InformationalVersion>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>true</SelfContained>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <ApplicationIcon>Assets\omm-stack-eye.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\omm-stack-eye.ico" />
+  </ItemGroup>
 
 </Project>

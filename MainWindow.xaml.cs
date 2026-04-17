@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Windows.Media.Imaging;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -14,6 +15,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        Icon = new BitmapImage(new Uri("pack://application:,,,/Assets/omm-stack-eye.ico", UriKind.Absolute));
         _viewModel = new MainViewModel();
         DataContext = _viewModel;
         Loaded += OnLoaded;

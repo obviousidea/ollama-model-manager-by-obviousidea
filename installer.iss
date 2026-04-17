@@ -1,8 +1,21 @@
-#define MyAppName "Ollama Model Manager"
-#define MyAppPublisher "ObviousIdea"
-#define MyAppExeName "OllamaModelManagerByObviousIdea.exe"
-#define MyAppVersion "2026.04.17.3"
-#define MyAppSourceDir "C:\Users\fabri\OneDrive\Documents\codex\ollama optimisation\OllamaModelManagerByObviousIdea\release\win-x64"
+#ifndef MyAppName
+  #define MyAppName "Ollama Model Manager"
+#endif
+#ifndef MyAppPublisher
+  #define MyAppPublisher "ObviousIdea"
+#endif
+#ifndef MyAppExeName
+  #define MyAppExeName "OllamaModelManagerByObviousIdea.exe"
+#endif
+#ifndef MyAppVersion
+  #define MyAppVersion "2026.04.17.5"
+#endif
+#ifndef MyAppSourceDir
+  #define MyAppSourceDir "C:\Users\fabri\OneDrive\Documents\codex\ollama optimisation\OllamaModelManagerByObviousIdea\release\win-x64-2026.04.17.5"
+#endif
+#ifndef MyAppIconFile
+  #define MyAppIconFile "C:\Users\fabri\OneDrive\Documents\codex\ollama optimisation\OllamaModelManagerByObviousIdea\Assets\omm-stack-eye.ico"
+#endif
 
 [Setup]
 AppId={{7E9A36FC-E850-4CA4-955A-2B1F4D7DDF44}
@@ -18,6 +31,7 @@ ArchitecturesInstallIn64BitMode=x64compatible
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
+SetupIconFile={#MyAppIconFile}
 UninstallDisplayIcon={app}\{#MyAppExeName}
 OutputDir=C:\Users\fabri\OneDrive\Documents\codex\ollama optimisation\OllamaModelManagerByObviousIdea\release\installer
 OutputBaseFilename=OllamaModelManagerSetup-{#MyAppVersion}
